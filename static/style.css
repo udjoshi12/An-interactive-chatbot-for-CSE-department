@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: border-box;
+}
+.all-content{
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-image: url(Untitled.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.header{
+    height: 100px;
+    width: 1355px;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    height: 90px;
+    width: 400px;
+    background-image: url(GEHU-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box-1 {
+    box-sizing: border-box;
+    background: #59cc2e;
+    width: 80%;
+    height: 100px;
+    position: relative;
+    align-items: center;
+    
+    display: flex;
+    color: #bd1839;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 50px;
+}
+
+.box-2{
+    margin: 55px;
+    box-sizing: border-box;
+    background: #c0ef65;
+    width: 190px;
+    height:200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box2-content{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display:list;
+    height: 90px;
+    width: 140px;
+    margin: 25px;
+}
+.box2-content a{
+    color: black;
+    text-decoration: none;
+}
+.box-2 a:hover{
+    color: maroon;
+}
+
+.chatbot{
+    
+    box-sizing: border-box;
+    margin-left: 400px;
+    margin-top: 10px;
+    height: 400px;
+    width: 600px;
+    background-color: rgba(245, 245, 245, 0.2);
+    border: 1.5px solid rgb(133, 96, 96);
+    justify-content: center;
+    
+
+}
+.chatbot-head{
+    box-sizing: border-box;
+    border-bottom: 1.5px solid rgb(133, 96, 96);
+    margin-top: 10px;
+    height: 50px;
+    width: 598px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.chatbot-body{
+    height: 300px;
+    width: 598px;
+    
+}
+.hero{
+    height: 400px;
+    width: 600px;
+    display: flex;
+    
+}
+.image{
+    position: relative;
+    margin-top: 150px;
+    background-image: url('images.jpg');
+    height: 120px;
+    width: 200px;
+}
+.user-message, .bot-message {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: right;
+    margin-left: 100px;
+}
+.bot-message {
+    background-color: #61AFDB;
+    color: #E5E5E5;
+    text-align: left;
+    margin-right: 100px;
+}
+.form-container{
+    height: 33px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content:baseline;
+}
+.chatbot-prompt{
+    height: 33px;
+    width: 546px;
+    background-color: aliceblue;
+    border-bottom:1.5px solid rgb(133, 96, 96);
+    margin: 0;
+}
+.button{
+    width: auto;
+    height: 34px;
+    background-color: aliceblue;
+    margin: 0;
+}
+.decor{
+    height: auto;
+    width: auto;
+    marker: none;
+}
+.contact{
+    height: auto;
+    width: 200px;
+    margin-top: 0;
+    margin-left: 100px;
+    display: flex;
+    marker: none;
+}
+.contact a{
+    color: black;
+    text-decoration: none;
+    width: auto;
+}
+.contact a:hover{
+    color: maroon;
+}
+.instaLogo{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    background-image: url("instaLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.xLogo{
+    height: 25px;
+    width: 30px;
+    position: relative;
+    background-image: url("xLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.fbLogo{
+    height: 25px;
+    width: 30px;
+    position: relative;
+    background-image: url("fbLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bot-image{
+    height: 300px;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: relative;
+    background-image: url("botimage.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

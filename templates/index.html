@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSE deptt. chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="all-content">
+        <div class="header">
+            <div class="box-1">
+                <div class="logo">
+                </div>
+                <div class="box1-content">
+                    <h1>GRAPHIC ERA HILL UNIVERSITY</h1>
+                    <h2>Department of Computer Science and Engineering</h2>
+                </div>
+            </div>
+            <div class="box-2">
+                <div class="box2-content">
+                    <a href="https://student.gehu.ac.in" target="_blank">ERP login</a>
+                    <br><br><br><br>
+                    <a href="https://btechcsegehu.in/" target="_blank">Department Website</a>
+                    <br><br><br><br>
+                    <a href="https://dehradun.gehu.ac.in/" target="_blank">University Website</a>
+                </div>
+                <div class="image">
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="chatbot">
+                <div class="chatbot-head">
+                    <h3>Feel free to ask your queries related to the department</h3>
+                </div>
+                <div class="chatbot-body">
+                    <div class="chatbot-messages">
+                        
+                        <!-- Display user's message -->
+                        {% for user_message in user_messages %}
+                            <div class="user-message">
+                                <strong>User:</strong> {{ user_message }}
+                            </div>
+                        {% endfor %}
+                    
+                        <!-- Display bot's message -->
+                        {% for bot_message in bot_messages %}
+                            <div class="bot-message">
+                                <strong>Bot:</strong> {{ bot_message }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="form-container">
+                <form method="post">
+                    <input class="chatbot-prompt" text id="message" name="message" placeholder="Type your message here..." required>
+                        <button class="button" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="decor">
+                <div class="bot-image"></div>
+                <div class="contact">
+                    <h3>Follow Us:</h3>
+                    <a href="https://www.instagram.com/graphicerahilluniversity/" target="_blank">
+                        <div class="instaLogo"></div>
+                    </a>
+                    <a href="https://twitter.com/gehudehradun?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                        <div class="xLogo"></div>
+                    </a>
+                    <a href="https://www.facebook.com/gehu.official/" target="_blank">
+                        <div class="fbLogo"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
